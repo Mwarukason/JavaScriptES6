@@ -48,5 +48,36 @@ code feels clean, intuitive and well designed.(Bt problem with web).
    #updatespackage.json:
    -  added dependences, add babel & presets 2015
 
-   #NewES6:
-   -
+   #NewES6newSyntax:
+
+   #SynthesizingES6Syntax
+   #OperatingAndDestructuringAssignment:
+    -Simplifies extracting data on arrays and objects into distinct variables.
+    -SpreadOperator: {...}
+    -RestParameters: function(){};
+
+    #ARROW FUNCTION:
+    ES6 introduces the arrow function and a whole lot of helper methods to simplify manipulating arrays, objects, strings, and numbers.
+     - The arrow function works just like a normal function expression, but with reduced syntax: ( ) => { … }
+
+     - By default, arrow functions are anonymous because we declare them with an operator rather than the ‘function’ keyword.
+
+     - The map helper method creates arrays by calling functions on each individual element of an initial array.
+
+     - The filter helper method creates arrays based on the same elements of an original array depending on a certain test.
+
+     - String.repeat() creates large strings by concatenating a string a certain number of times.
+
+     - The search methods for strings include .startsWith, .endsWith, .includes, and more.
+
+     - Number type checking can occur through the - Number.isFinite method.
+
+     - Number safety checking can occur through the - Number.isSafeInteger method.
+
+     #Modules refer to reusable pieces of code within an application. Most often, they exist independently within separate files, which come in handy when having to split up a large application.
+ 
+     - The export keyword sends primitive values, objects, or functions from one module to another.
+
+     - The import keyword receives primitive values, objects, or functions from another module.
+
+     - Using the default keyword gives a module a fallback function when exporting multiple values and methods.
