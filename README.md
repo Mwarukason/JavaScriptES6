@@ -9,15 +9,16 @@ code feels clean, intuitive and well designed.(Bt problem with web).
 #Why Babel and transpilers.?
 #transpilers:
   - Browsers only have widespread support of older JS.
-  - Transpilers Convert advanced TypScript and CoffeeScript code back into the original JS.
+  - Transpilers: reads code written in one language and produces the equivalent code in another.
 
   Eg. Babel:(babeljs.io)
 
-#Webpack
- - It bundles modules into .js file
- - comes with a dev-server
+#Webpack:
+ - allows us to create an environment that transforms es6 code with babel.
+ - It combines multiple modules into one js file to reduce errors and resources on the client-side.
+ - Shipping with a development server, it gives us live code updating for free!
 
- #Start work with Webpack:
+ #StartworkwithWebpack:
   - npm init -y
   - npm install --save-dev webpack
   - commit to push to github
@@ -45,4 +46,7 @@ code feels clean, intuitive and well designed.(Bt problem with web).
    - module (loader,test,exclude)
 
    #updatespackage.json:
-   -  
+   -  added dependences, add babel & presets 2015
+
+   #NewES6:
+   -
