@@ -104,10 +104,27 @@
 // console.log(addToCart('shirt',Math.pow(5,54)));
 
 //MODULES
-import { owners, total } from './exsample';
-import { add } from './math';
-import multiply from './math';
+// import { owners, total } from './exsample';
+// import { add } from './math';
+// import multiply from './math';
+//
+// console.log(owners, total);
+// console.log(add(10,22));
+// console.log(multiply(10,50));
 
-console.log(owners, total);
-console.log(add(10,22));
-console.log(multiply(10,50));
+//import the class Animal from index Animal
+import Animal from './Animal';
+
+//INHERITANCES:
+class Punda extends Animal {
+  constructor(name, height,color){
+    super(name,height);
+    this.color = color;
+  }
+  hello(){
+    console.log(`Hi I'm ${this.name} from Pundamilia Clan`);
+  }
+}
+let ndama = new Punda("Punda milia", 4.3, "Yellow");
+console.log(ndama);
+ndama.hello();
