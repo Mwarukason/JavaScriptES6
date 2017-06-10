@@ -75,9 +75,34 @@ code feels clean, intuitive and well designed.(Bt problem with web).
      - Number safety checking can occur through the - Number.isSafeInteger method.
 
      #Modules refer to reusable pieces of code within an application. Most often, they exist independently within separate files, which come in handy when having to split up a large application.
- 
+
      - The export keyword sends primitive values, objects, or functions from one module to another.
 
      - The import keyword receives primitive values, objects, or functions from another module.
 
      - Using the default keyword gives a module a fallback function when exporting multiple values and methods.
+
+     #Object-Oriented Programming:
+      - Objects or Classes hold relevant data that interact with each other
+      - Major Lang. like C#, C, JAVA, RUBBY
+      - JavaScript supports a prototypal inheritance model.
+
+      Classes in JavaScript construct structures of data based off of the state and behavior of real world objects and introduce a system of inheritance.
+
+      The constructor keyword initializes an object for a class.
+
+      The extends keyword creates subclasses and children of parent classes.
+
+      Static methods in classes can be called even outside the context of class.
+
+      Object-oriented programming models objects to create programs centered around the interactions of these objects with each other. Major programming languages like C, Java, and Ruby contain heavy support for object-oriented programming.
+
+      JavaScript is not based on object-oriented programming, but a prototypal-inheritance model.
+
+      A prototype is a characteristic in every JavaScript object that reveals its parent and the properties that it inherits.
+
+      All JavaScript objects contain a prototype and can trace their chain of prototypal inheritance all the way back to the base level Object prototype.
+
+      Arrow functions don’t create their own local ‘this’ object like a normal function prototype, but instead refer to the ‘this’ tied to its outer scope.
+
+      Classes and prototypes appear everywhere in JavaScript. And every ES6 programmer needs to grasp these fundamental concepts to truly grasp how the language works. Luckily, once you understand that classes are simply prototypes, and prototypes are simply references to an object’s parent, it becomes less abstract.

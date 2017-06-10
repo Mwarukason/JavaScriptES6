@@ -112,19 +112,84 @@
 // console.log(add(10,22));
 // console.log(multiply(10,50));
 
-//import the class Animal from index Animal
-import Animal from './Animal';
+// //import the class Animal from index Animal
+// import Animal from './Animal';
+//
+// //INHERITANCES CLASS ANIMA:
+// class Punda extends Animal {
+//   constructor(name, height,color){
+//     super(name,height);
+//     this.color = color;
+//   }
+//   hello(){
+//     console.log(`Hi I'm ${this.name} from Pundamilia Clan`);
+//   }
+// }
+// let ndama = new Punda("Punda milia", 4.3, "Yellow");
+// console.log(ndama);
+// ndama.hello();
 
-//INHERITANCES:
-class Punda extends Animal {
-  constructor(name, height,color){
-    super(name,height);
-    this.color = color;
-  }
-  hello(){
-    console.log(`Hi I'm ${this.name} from Pundamilia Clan`);
-  }
+//creating static methods
+// class Calculator {
+//   //static methods allowed to be access
+//   //right away without instance the class
+//   static multiply(a,b){
+//     return a*b
+//   }
+// }
+// let a = Calculator.multiply(5,8);
+// console.log(a);
+
+//example of class Instrument
+// class Instrument {
+//   constructor(name, type) {
+//     this.name = name;
+//     this.type = type;
+//   }
+// }
+// class Guitar extends Instrument {
+//   describe() {
+//     return `Im a ${this.name} from the ${this.type} family`;// TODO fill this line
+//   }
+// }
+// let fender = new Guitar("Fender", "strings");
+// console.log(fender.describe());
+
+//Object-Oriented Programming / Prototypes
+// function Wizard(name,house,pet){
+//   this.name = name;
+//   this.house = house;
+//   this.pet = pet;
+//
+//   this.greet = () => `I'm ${this.name} from ${this.house}`
+// }
+//
+// //can create a properties by just
+// Wizard.prototype.use_name;
+// //can also create a function, no use of Arrow function:
+// Wizard.prototype.info = function(){
+//   return `I have a ${this.pet} named ${this.use_name}`
+// };
+//
+// let juma = new Wizard("Jembe Mtu", "Sheraton", "Paka");
+// juma.use_name = "mackjay";
+// console.log(juma);
+// console.log(juma.info());
+
+//todo on prototype
+// * add a 'color' field to the prototype
+// * add a 'bio' method that *returns*:
+//      A ${this.color} ${this.make} made in ${this.year}.
+
+function Vehicle(make, year) {
+  this.make = make;
+  this.year = year;
 }
-let ndama = new Punda("Punda milia", 4.3, "Yellow");
-console.log(ndama);
-ndama.hello();
+
+Vehicle.prototype.color;
+Vehicle.prototype.bio = function(){
+    return `A ${this.color} ${this.make} made in ${this.year}`;
+};
+let s = new Vehicle("Tesla", 2017);
+s.color = "black";
+console.log(s.bio());
