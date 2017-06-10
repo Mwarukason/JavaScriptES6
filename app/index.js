@@ -437,16 +437,46 @@
 // console.log(bs.next());
 // console.log(bs.next());
 
-function* arrayIterator(){
-  //yield arguments
-  yield* arguments;
-  // for(let arg of arguments){
-  //   yield arg;
-  // }
-}
+// function* arrayIterator(){
+//   //yield arguments
+//   yield* arguments;
+//   // for(let arg of arguments){
+//   //   yield arg;
+//   // }
+// }
+//
+// var bs = arrayIterator(2,5,3,4);
+// console.log(bs.next().value);
+// console.log(bs.next().value);
+// console.log(bs.next().value);
+// console.log(bs.next().value);
 
-var bs = arrayIterator(2,5,3,4);
-console.log(bs.next().value);
-console.log(bs.next().value);
-console.log(bs.next().value);
-console.log(bs.next().value);
+//PROMISES ASYNCRONISE CREATIONS
+// let a = new Promise((resolve, reject) => {
+//   //resolve('Resolved promise data');
+//   //reject('Rejected promise data');
+//   setTimeout(() => resolve('Resolved promise data'),3000);
+// })
+//
+// a.then(response => console.log(response))
+//  .catch(error => console.log(error));
+//  console.log('after promise consumption');
+
+//HTTP & FETCH:
+// const root = 'http://jsonplaceholder.typicode.com/posts/1';
+//
+// //return the JSON APIs AT JSONPLACEHOLDER:
+// fetch(root, {method: "GET"})
+//   //return json response
+//   //.then(response => console.log(response));
+//   .then(response => response.json())
+//   .then(json => console.log(json));
+
+//DYNAMIC API FOR BOOKS
+const root = 'https://www.googleapis.com/books/v1/volumes?q=isbn:0747532699';
+
+ //return the JSON APIs AT JSONPLACEHOLDER:
+fetch(root, {method: "GET"})
+   //return json response
+   .then(response => response.json())
+   .then(json => console.log(json));
