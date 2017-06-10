@@ -128,3 +128,22 @@ code feels clean, intuitive and well designed.(Bt problem with web).
 
         DATA ECNCAPSULATION AND PRIVATE METHODS
         don’t exist natively in JavaScript but can be emulated with closures for data restriction and limited access.
+
+        Overall, closures significantly improve the programs. Having closures can private methods allow to remove non-essential expressions and methods from the global scope of the program. Furthermore, understanding closures will put a programmer one step ahead of the game as a JavaScript programmer and software engineer. It’s a fundamental yet somewhat abstract concept. But it turns out to not feel so complex once you actually dive into some relevant examples.
+
+        ES6 GENERATORS:
+        Generators break the typical “run to completion” model of normal functions and can start, pause, and reset.
+
+        Generators use the syntax of a normal function, but have an asterisk following the function keyword: function* generator { … } .
+
+        The generator yield keyword signals when to ‘pause’ the function and return its current state.
+
+        Generator instances don’t use the new keyword like the typical function prototype or Object.
+
+        Using the generator’s special next() method allows us to access its yielded state.
+
+        Passing values to the next() method introduces a way for generators to reset, or complete their runtime.
+
+        An iterator in JavaScript demonstrates a type of object that can access values in a collection one at a time.
+
+        A generatorcan provide a convenient and complex alternative to iterators
