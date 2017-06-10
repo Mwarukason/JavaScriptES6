@@ -106,3 +106,14 @@ code feels clean, intuitive and well designed.(Bt problem with web).
       Arrow functions don’t create their own local ‘this’ object like a normal function prototype, but instead refer to the ‘this’ tied to its outer scope.
 
       Classes and prototypes appear everywhere in JavaScript. And every ES6 programmer needs to grasp these fundamental concepts to truly grasp how the language works. Luckily, once you understand that classes are simply prototypes, and prototypes are simply references to an object’s parent, it becomes less abstract.
+
+      #Data Structures in ES6
+      Data Structures in computer science refer to the programming storage of data for efficient usage in applications and algorithms.
+
+        A Set compares to a more advanced array that has all unique elements and no duplicate values.
+
+        Set iteration frequently occurs through the values() helper method.
+
+        A Map represents a more advanced object in es6 with key-value pairs that can have non-string keys.
+
+        Map iterate frequently occurs through the entries() helper method.

@@ -181,15 +181,106 @@
 // * add a 'bio' method that *returns*:
 //      A ${this.color} ${this.make} made in ${this.year}.
 
-function Vehicle(make, year) {
-  this.make = make;
-  this.year = year;
-}
+// function Vehicle(make, year) {
+//   this.make = make;
+//   this.year = year;
+// }
+//
+// Vehicle.prototype.color;
+// Vehicle.prototype.bio = function(){
+//     return `A ${this.color} ${this.make} made in ${this.year}`;
+// };
+// let s = new Vehicle("Tesla", 2017);
+// s.color = "black";
+// console.log(s.bio());
 
-Vehicle.prototype.color;
-Vehicle.prototype.bio = function(){
-    return `A ${this.color} ${this.make} made in ${this.year}`;
+
+//DATA STRUCTURES
+//SET PART:
+// let a = new Set();
+// a.add(23);
+// a.add(83);
+// a.add({x:23,y:34});
+// console.log(a);
+
+// let nums = [8,99,78,34,23,32];
+// let numSet = new Set(nums);
+// console.log(numSet);
+//
+// for (let elem of numSet.values()){
+//   console.log(elem);
+// }
+
+//check for unique characters on random string
+// let char = 'asjza,mcncqoksccjswaurvbaschahefiufirvnshbh';
+// let char_arr = char.split("");
+// let char_set = new Set(char_arr);
+// console.log(char_set);
+
+//IMPLIMENTATION OF DATASTRUCTURE "has" & "Set"
+// const contains = (word, letter) => {
+//   let letters = word.split("");
+//   let letters_set = new Set(letters);
+//   return letters_set.has(letter);
+//   // Todo create a set with the above 'letters' array
+//   // Todo return whether the set has the 'letter'
+// };
+// let true_check = contains("12344", "7");
+// console.log(true_check);
+// let false_check = contains("north", "e");
+// console.log(false_check);
+
+
+//DATASTRUCTURE MAP()
+// let a = new Map();
+// let key_1 = "string key";
+// let key_2 = {a: "key"};
+// let key_3 = function(){};
+//
+// a.set(key_1, 'return value of string key');
+// a.set(key_2, 'return value of object key');
+// a.set(key_3, 'return value of function key');
+// console.log(a);
+//
+// let numArr = [[1, 'one'], [2, 'two'], [3,'three']];
+// let valMap = new Map(numArr);
+// console.log(valMap);
+//
+// for(let [key,value] of valMap.entries()){
+//   console.log(`${key} points to ${value}`);
+// }
+//
+// let string = 'cmnczkdjsuriwtwoeipqpqlpqwsaswepoo';
+// let letters = new Map();
+// for (let i=0; i<string.length;i++){
+//   let letter = string[i];
+//   if (!letters.has(letter)) {//if not empty
+//     letters.set(letter, 1);
+//   }else{
+//       letters.set(letter,letters.get(letter)+1);
+//   }
+// }
+// console.log(letters);
+
+let string = 'xsuperxcalifragixlisticexpialidocious';
+
+const countLetter = (word, orig_letter) => {
+  // TODO Create a map called 'letters'
+  let letters = new Map();
+  for (let i=0; i<word.length; i++) {
+    let letter = word[i];
+    if (!letters.has(letter)) {
+      // TODO set the letter in the map to 1
+        letters.set(letter, 1);
+    } else {
+        letters.set(letter,letters.get(letter)+1);
+      // TODO update the value of letter in letters to its value + 1
+    }
+  }
+  return letters.get(orig_letter);
 };
-let s = new Vehicle("Tesla", 2017);
-s.color = "black";
-console.log(s.bio());
+
+let a_count = countLetter(string, 'a');
+let x_count = countLetter(string, 'x');
+console.log(`a appear ${a_count} times in a string`);
+console.log(`x appear ${x_count} times in a string`);
