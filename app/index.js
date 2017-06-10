@@ -482,44 +482,44 @@
 //    .then(json => console.log(json));
 
 
-//ES7 UPDATES
-let a = 2**5;//POWER
-console.log(a);
-let b = [3,5,4,2,11,32].includes(4);//INCLUDES
-console.log(b);
-
-//ES8 UPDATES: OBJECTS:
-let obj = {a: 'one', b: 'two', b: 'three'};
-let value = Object.values(obj);
-let key = Object.keys(obj);
-let entries = Object.entries(obj);
-console.log(value);
-console.log(key);
-console.log(entries);
-for(let entry of entries){
-  console.log(`key: ${entry[0]}, value: ${entry[1]}`);
-}
+// //ES7 UPDATES
+// let a = 2**5;//POWER
+// console.log(a);
+// let b = [3,5,4,2,11,32].includes(4);//INCLUDES
+// console.log(b);
+//
+// //ES8 UPDATES: OBJECTS:
+// let obj = {a: 'one', b: 'two', b: 'three'};
+// let value = Object.values(obj);
+// let key = Object.keys(obj);
+// let entries = Object.entries(obj);
+// console.log(value);
+// console.log(key);
+// console.log(entries);
+// for(let entry of entries){
+//   console.log(`key: ${entry[0]}, value: ${entry[1]}`);
+// }
 
 //ES8 UPDATES: ASYNC FUNCTION:
-async function async_one(){
-  return "One";
-}
-async function async_two(){
-  //throw new Error('issue with async');
-  return "Two";
-}
-async function async_three(){
-  const one = await async_one();
-  console.log(one);
-  const two = await async_two();
-  console.log(two);
-}
-async function async_four(){
-  const [res_one, res_two] = await Promise.all(
-    [async_one(), async_two()]
-  )
-  console.log(res_one, res_two);
-}
-
-async_four();
+// async function async_one(){
+//   return "One";
+// }
+// async function async_two(){
+//   //throw new Error('issue with async');
+//   return "Two";
+// }
+// async function async_three(){
+//   const one = await async_one();
+//   console.log(one);
+//   const two = await async_two();
+//   console.log(two);
+// }
+// async function async_four(){
+//   const [res_one, res_two] = await Promise.all(
+//     [async_one(), async_two()]
+//   )
+//   console.log(res_one, res_two);
+// }
+//
+// async_four();
 //async_two().catch(error => console.log(error));
