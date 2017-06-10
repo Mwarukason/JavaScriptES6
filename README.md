@@ -170,3 +170,21 @@ ASYNCHRONOUS PROGRAMMING, PROMISES, AND APIs:
         HEAD, DELETE, PATCH, and more…
 
         The Fetch method begins to provides access in ES6 to HTTP request methods and grab data from apis by returning a promise that stands in for resulting data.
+
+        ES6 programmers must understand how to implement promises in ES6. But when you reduce the Promise down to the simple idea of a stand in value for pending, fulfilled, and rejected state, the concept becomes clear.
+
+        Plus, with promises you have the full power of the Internet’s vast array of APIs at your disposal. And when you can combine more than one api, you’ll have a truly awesome project on your hands.
+
+ES7 and ES Proposals | Section Overview and Coding Break:
+
+        ES7 released the new exponent operator which replaces Math.pow(x, y) with x ** y;
+
+        ES7 standardized the .includes() method for arrays which checks if an element exists within an array collection.
+
+        Object.values() returns an array of an object’s values as part of the new ES proposal to improve the Object prototype.
+
+        Object.entries() returns an array of an object’s keys and values as part of the new ES proposal to improve the Object prototype.
+
+        The async keyword introduces async functions in ecmascript and allow for more controlled flow of asynchronous functions.
+
+        The await keyword adds blocking to asynchronous functions in order to temporarily stop the execution of statements and logic until certain data finishes returning a response.
