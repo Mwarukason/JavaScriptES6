@@ -48,15 +48,14 @@ code feels clean, intuitive and well designed.(Bt problem with web).
    #updatespackage.json:
    -  added dependences, add babel & presets 2015
 
-   #NewES6newSyntax:
+   SYNTHESIZING ES6 SYNTAX
 
-   #SynthesizingES6Syntax
-   #OperatingAndDestructuringAssignment:
+   OPERATION AND DATASTRUCTURE ASSIGNMENT:
     -Simplifies extracting data on arrays and objects into distinct variables.
     -SpreadOperator: {...}
     -RestParameters: function(){};
 
-    #ARROW FUNCTION:
+    ARROW FUNCTION:
     ES6 introduces the arrow function and a whole lot of helper methods to simplify manipulating arrays, objects, strings, and numbers.
      - The arrow function works just like a normal function expression, but with reduced syntax: ( ) => { … }
 
@@ -74,7 +73,7 @@ code feels clean, intuitive and well designed.(Bt problem with web).
 
      - Number safety checking can occur through the - Number.isSafeInteger method.
 
-     #Modules refer to reusable pieces of code within an application. Most often, they exist independently within separate files, which come in handy when having to split up a large application.
+     MODULES refer to reusable pieces of code within an application. Most often, they exist independently within separate files, which come in handy when having to split up a large application.
 
      - The export keyword sends primitive values, objects, or functions from one module to another.
 
@@ -82,7 +81,7 @@ code feels clean, intuitive and well designed.(Bt problem with web).
 
      - Using the default keyword gives a module a fallback function when exporting multiple values and methods.
 
-     #Object-Oriented Programming:
+     OBJECT ORIENTED PROGRAMMING IN ES6:
       - Objects or Classes hold relevant data that interact with each other
       - Major Lang. like C#, C, JAVA, RUBBY
       - JavaScript supports a prototypal inheritance model.
@@ -107,7 +106,7 @@ code feels clean, intuitive and well designed.(Bt problem with web).
 
       Classes and prototypes appear everywhere in JavaScript. And every ES6 programmer needs to grasp these fundamental concepts to truly grasp how the language works. Luckily, once you understand that classes are simply prototypes, and prototypes are simply references to an object’s parent, it becomes less abstract.
 
-      #Data Structures in ES6
+      DATASTRUCTURE IN ES6:
       Data Structures in computer science refer to the programming storage of data for efficient usage in applications and algorithms.
 
         A Set compares to a more advanced array that has all unique elements and no duplicate values.
@@ -117,3 +116,15 @@ code feels clean, intuitive and well designed.(Bt problem with web).
         A Map represents a more advanced object in es6 with key-value pairs that can have non-string keys.
 
         Map iterate frequently occurs through the entries() helper method.
+
+        CLOSURES IN ES6:
+        Closures in JavaScript and ES6 refer to functions that remember their creation environment and can further reference that environment’s independent variables.
+
+        LEXICAL SCOPING:
+         refers to the JavaScript concept of programs keeping track of variable locations to understand in which scopes they can be accessed.
+
+        FUNCTION FACTORIES:
+        create functions based on returning inner functions that manipulate its own arguments and the arguments of the outer function.
+
+        DATA ECNCAPSULATION AND PRIVATE METHODS
+        don’t exist natively in JavaScript but can be emulated with closures for data restriction and limited access.

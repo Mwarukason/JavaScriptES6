@@ -262,25 +262,113 @@
 // }
 // console.log(letters);
 
-let string = 'xsuperxcalifragixlisticexpialidocious';
+// let string = 'xsuperxcalifragixlisticexpialidocious';
+// const countLetter = (word, orig_letter) => {
+//   // Todo Create a map called 'letters'
+//   let letters = new Map();
+//   for (let i=0; i<word.length; i++) {
+//     let letter = word[i];
+//     if (!letters.has(letter)) {
+//       // Todo set the letter in the map to 1
+//         letters.set(letter, 1);
+//     } else {
+//         letters.set(letter,letters.get(letter)+1);
+//       // Todo update the value of letter in letters to its value + 1
+//     }
+//   }
+//   return letters.get(orig_letter);
+// };
+// let a_count = countLetter(string, 'a');
+// let x_count = countLetter(string, 'x');
+// console.log(`a appear ${a_count} times in a string`);
+// console.log(`x appear ${x_count} times in a string`);
 
-const countLetter = (word, orig_letter) => {
-  // TODO Create a map called 'letters'
-  let letters = new Map();
-  for (let i=0; i<word.length; i++) {
-    let letter = word[i];
-    if (!letters.has(letter)) {
-      // TODO set the letter in the map to 1
-        letters.set(letter, 1);
-    } else {
-        letters.set(letter,letters.get(letter)+1);
-      // TODO update the value of letter in letters to its value + 1
-    }
+
+//CLOSURES
+// let call = () =>{
+//   //secret cannot be accessed outside call function
+//   let secret = 'ES6 Awesome like Crzy';
+//   let revel = () => {
+//     console.log(secret);
+//   }
+//     //revel();
+//     return revel;
+// }
+// //call();closure
+// let unveil = call();
+// unveil();
+
+//EXAMPLE addSurfix:
+// const addSuffix =(x) => {
+//   const concat = (y) => {
+//     return y + x;
+//   }
+//   return concat;
+// }
+// //happyness
+// let add_ness = addSuffix("ness");
+// //console.log(add_ness);//returns function concat
+// let h = add_ness("happy");
+// console.log(h); //returns the cancatnated full value "happyness"
+// //mwarukason.
+// let add_son = addSuffix("son");
+// let add_mwaruka = add_son("Mwaruka");
+// console.log(add_mwaruka);
+
+//EXAMPLE OF FUNCTION FUCTORY.
+// const produc = (x) =>{
+//   return y =>{
+//     return y * x;
+//   }
+// }
+// const produc = x => y => y * x;
+// const add = x => y => y + x;
+// // const add = (x) =>{
+// //   return y =>{
+// //     return y + x;
+// //   }
+// // }
+// let addT = add(80);
+// let double = addT(2);
+// console.log(double);
+// let mult = produc(20);
+// let doub = mult(2);
+// console.log(doub);
+
+// const addFactory = x => y => y+x;
+// //{
+//   // Todo
+//   // return an inner function with one parameter, y;
+//   // the inner funcion returns x + y;
+// //};
+// const add50 = addFactory(50);
+// const add100 = add50(100);
+// console.log(add100);
+// const add30 = addFactory(30);
+// const add200 = add30(200);
+// console.log(add200);
+
+
+//BUDGET EXAMPLE: PRIVATE METHODS
+const budget = () => {
+  let balance =0;
+  let changeBal = (val) => {
+    return balance += val;
   }
-  return letters.get(orig_letter);
-};
+  const deposit20 = () => changeBal(20);
+  const withdraw20 = () => changeBal(-20);
+  const check = () => balance;
+  return{
+        deposit20: deposit20,
+        withdraw20: withdraw20,
+        check:check
+      }
+  //return {deposit20, withdraw20,check}key &value re same
+}
 
-let a_count = countLetter(string, 'a');
-let x_count = countLetter(string, 'x');
-console.log(`a appear ${a_count} times in a string`);
-console.log(`x appear ${x_count} times in a string`);
+let walet = budget();
+walet.deposit20();
+walet.withdraw20();
+walet.deposit20();
+walet.deposit20();
+console.log(walet.check());
